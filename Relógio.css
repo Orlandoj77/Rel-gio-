@@ -1,0 +1,41 @@
+body{
+    align-items: center ;
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    margin-left: 40em;
+    margin-top: 7em;
+
+    
+}
+
+
+#relogio{
+color:rgb(255, 254, 254);
+font: bold 50px Time new homan;
+padding: 10px;
+font-size: 5em;
+border-left: 0;
+border-right: 0;
+margin-top: 200px;
+
+
+
+
+}
+ .Text{
+            color: rgb(255, 255, 255);
+            margin-top: 20px;
+            font-family: Times New Roman;
+            
+        }
+       .Rolex2{
+background-image: url("Rolex3.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-position: flex;
+
+
+}
