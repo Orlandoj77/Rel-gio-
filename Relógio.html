@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="content-typt" content="text/html; charset= iso-8859-1">
     <title>Relógio</title>
-<link rel="stylesheet" href="Relógio.css">
+    <link rel="stylesheet" href="Relógio.css">
 
 
 
@@ -18,49 +19,50 @@
 
 
     <script type="text/javascript">
-    
-    function relogio(){
 
-        var data= new Date();
-        var horas=data.getHours();
-        var minutos= data.getMinutes();
-        var segundos= data.getSeconds();
-        
-        
-       
+        function relogio() {
+
+            var data = new Date();
+            var horas = data.getHours();
+            var minutos = data.getMinutes();
+            var segundos = data.getSeconds();
 
 
-    
-        if(horas < 10){
-            horas="0"+horas;
+
+
+
+
+            if (horas < 10) {
+                horas = "0" + horas;
+            }
+
+            if (minutos < 10) {
+                minutos = "0" + minutos;
+            }
+
+
+            if (segundos < 10) {
+                segundos = "0" + segundos;
+            }
+
+            document.getElementById("relogio").innerHTML = horas + ":" + minutos + ":" + segundos;
+
+
         }
-        
-        if(minutos < 10){
-            minutos="0"+minutos;
-        }
-        
-        
-        if(segundos < 10){
-            segundos="0"+segundos;
-        }
-        
-        document.getElementById("relogio").innerHTML= horas+":"+minutos+":"+segundos;
-        
-        
-        }
-        
-        window.setInterval("relogio()",1000);
 
-       
- 
-        </script>
- 
+        window.setInterval("relogio()", 1000);
 
 
-          <div id="relogio"> </div>
 
-<h1 class="Text">Enjoy every second</h1>
+    </script>
 
 
-</body >
+
+    <div id="relogio"> </div>
+
+    <h1 class="Text">Enjoy every second</h1>
+
+
+</body>
+
 </html>
